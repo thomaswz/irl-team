@@ -1,0 +1,58 @@
+{
+  "name": "irl-team",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:staging": "VITE_FIREBASE_ENVIRONMENT=staging vite",
+    "dev:production": "VITE_FIREBASE_ENVIRONMENT=production vite",
+    "build": "vite build",
+    "build:staging": "VITE_FIREBASE_ENVIRONMENT=staging vite build",
+    "build:production": "VITE_FIREBASE_ENVIRONMENT=production vite build",
+    "preview": "vite preview",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src/",
+    "deploy:staging": "npm run build:staging && firebase deploy --only hosting --project irl-team-staging",
+    "deploy:production": "npm run build:production && firebase deploy --only hosting --project irl-team",
+    "deploy:staging:all": "npm run build:staging && firebase deploy --project irl-team-staging",
+    "deploy:production:all": "npm run build:production && firebase deploy --project irl-team",
+    "load:emulator": "node backend/scripts/load-all-data.js",
+    "load:production": "node backend/scripts/load-all-production-data.js",
+    "load:users:emulator": "node backend/scripts/load-emulator-users.js",
+    "load:users:production": "node backend/scripts/load-production-users.js",
+    "load:gantt:emulator": "node backend/scripts/load-gantt-data.js",
+    "load:gantt:production": "node backend/scripts/load-production-gantt-data.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bootstrap": "^5.3.7",
+    "chart.js": "^4.5.0",
+    "dotenv": "^17.2.1",
+    "firebase": "^12.0.0",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1",
+    "vuefire": "^3.2.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "node-fetch": "^2.7.0",
+    "prettier": "3.5.3",
+    "vite": "^7.0.0",
+    "vite-plugin-vue-devtools": "^7.7.7"
+  },
+  "description": "IRL Team - Vue 3 application with Firebase dual environment setup",
+  "main": "playwright.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaswz/irl-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomaswz/irl-team/issues"
+  },
+  "homepage": "https://github.com/thomaswz/irl-team#readme"
+}

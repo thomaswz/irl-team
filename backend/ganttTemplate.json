@@ -1,0 +1,145 @@
+[
+  {
+    "name": "ganttTemplates/Default/Tasks/InsideBuild",
+    "fields": {
+      "id": { "stringValue": "InsideBuild" },
+      "name": { "stringValue": "Inside building" },
+      "resource": { "stringValue": "build" },
+      "start": { "timestampValue": "2026-09-21T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-12-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "0" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/OutsideBuild",
+    "fields": {
+      "id": { "stringValue": "OutsideBuild" },
+      "name": { "stringValue": "Outside build" },
+      "resource": { "stringValue": "build" },
+      "start": { "timestampValue": "2026-12-21T00:00:00.000Z" },
+      "end": { "timestampValue": "2027-03-21T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "0" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/ComplianceElec",
+    "fields": {
+      "id": { "stringValue": "ComplianceElec" },
+      "name": { "stringValue": "Electricial compliance" },
+      "resource": { "stringValue": "compliance" },
+      "start": { "timestampValue": "2025-09-04T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-02-01T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "100" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/ComplianceRoof",
+    "fields": {
+      "id": { "stringValue": "ComplianceRoof" },
+      "name": { "stringValue": "Roofing compliance" },
+      "resource": { "stringValue": "compliance" },
+      "start": { "timestampValue": "2026-03-31T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-10-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "14" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/ComplianceEnt",
+    "fields": {
+      "id": { "stringValue": "ComplianceEnt" },
+      "name": { "stringValue": "Entomology compliance" },
+      "resource": { "stringValue": "compliance" },
+      "start": { "timestampValue": "2025-10-28T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-06-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "86" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/Foundation_Base",
+    "fields": {
+      "id": { "stringValue": "Foundation_Base" },
+      "name": { "stringValue": "House foundation" },
+      "resource": { "stringValue": "foundation" },
+      "start": { "timestampValue": "2025-03-22T00:00:00.000Z" },
+      "end": { "timestampValue": "2025-06-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "100" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/InsidePaint",
+    "fields": {
+      "id": { "stringValue": "InsidePaint" },
+      "name": { "stringValue": "Inside painting" },
+      "resource": { "stringValue": "paint" },
+      "start": { "timestampValue": "2025-06-21T00:00:00.000Z" },
+      "end": { "timestampValue": "2025-09-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "100" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/OutsidePaint",
+    "fields": {
+      "id": { "stringValue": "OutsidePaint" },
+      "name": { "stringValue": "Outside painting" },
+      "resource": { "stringValue": "paint" },
+      "start": { "timestampValue": "2025-09-21T00:00:00.000Z" },
+      "end": { "timestampValue": "2025-12-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "100" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/RoofPrep",
+    "fields": {
+      "id": { "stringValue": "RoofPrep" },
+      "name": { "stringValue": "Roof preparation" },
+      "resource": { "stringValue": "roof" },
+      "start": { "timestampValue": "2025-12-21T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-03-21T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "100" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/RoofConstruct",
+    "fields": {
+      "id": { "stringValue": "RoofConstruct" },
+      "name": { "stringValue": "Roof construction" },
+      "resource": { "stringValue": "roof" },
+      "start": { "timestampValue": "2026-03-22T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-06-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "50" },
+      "dependencies": { "nullValue": null }
+    }
+  },
+  {
+    "name": "ganttTemplates/Default/Tasks/RoofFinalise",
+    "fields": {
+      "id": { "stringValue": "RoofFinalise" },
+      "name": { "stringValue": "Roof finalise" },
+      "resource": { "stringValue": "roof" },
+      "start": { "timestampValue": "2026-06-21T00:00:00.000Z" },
+      "end": { "timestampValue": "2026-09-20T00:00:00.000Z" },
+      "duration": { "nullValue": null },
+      "percentComplete": { "integerValue": "0" },
+      "dependencies": { "nullValue": null }
+    }
+  }
+]
